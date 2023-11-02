@@ -1,0 +1,1067 @@
+﻿# standard costs
+#@maa_buy_cost = 150
+#@maa_low_maintenance_cost = 1.0
+#@maa_high_maintenance_cost = 5.0
+#@cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+### Noldor ###
+## - The armies of the Noldor are few in number in the dwindling days of the Third Age, but in quality are unparalleled
+# Noldor Swordsman (Heavy Infantry)
+noldor_swordsmen = {
+	can_recruit = { noldor_trigger = yes }
+	type = heavy_infantry
+
+	buy_cost = { gold = 400 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
+
+	stack = 20
+	damage = 175
+	toughness = 125
+	pursuit = 10
+	screen = 30
+
+	counters = {
+		pikemen = 1
+		monster = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+# Noldor Glaivesman (Pikeman)
+noldor_glaivesmen = {
+	can_recruit = { noldor_trigger = yes }
+	type = pikemen
+
+	buy_cost = { gold = 350 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
+
+	stack = 20
+	damage = 125
+	toughness = 160
+	pursuit = 0
+	screen = 40
+
+	counters = {
+		monster = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = noldor_glaivesmen
+	allowed_in_hired_troops = no
+}
+
+# Noldor Cavalry (Heavy Cavalry)
+noldor_cavalry = {
+	can_recruit = { noldor_trigger = yes }
+	type = heavy_cavalry
+
+	buy_cost = { gold = 500 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.9 }
+
+	stack = 15
+	damage = 300
+	toughness = 150
+	pursuit = 60
+	screen = 60
+
+	counters = {
+		skirmishers = 1
+		archers = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+	icon = heavy_cavalry
+	allowed_in_hired_troops = no
+}
+
+# Noldor Archers (Archers)
+noldor_archers = {
+	can_recruit = { noldor_trigger = yes }
+	type = archers
+
+	buy_cost = { gold = 290 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
+
+	stack = 20
+	damage = 150
+	toughness = 100
+	pursuit = 30
+	screen = 0
+
+	counters = {
+		skirmishers = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = bowmen
+	allowed_in_hired_troops = no
+}
+
+# Noldor Veterans (Veterans of the Last Alliance)
+noldor_veterans = {
+	can_recruit = { always = no } # Event Troops
+	type = heavy_infantry
+
+	buy_cost = { gold = 1000 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
+
+	stack = 10
+	damage = 475
+	toughness = 525
+	pursuit = 20
+	screen = 80
+
+	counters = {
+		skirmishers = 1
+		pikemen = 1
+		archers = 1
+		monster = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+# Song-Smiths (Minstrels and Bards bearing songs of power - siege)
+song_smiths = {
+	can_recruit = {
+		OR = {
+			noldor_trigger = yes
+			#sindar_trigger = yes
+			#galadhrim_trigger = yes
+			#greenwood_trigger = yes
+			#neldoreth_trigger = yes
+		}
+
+	}
+	type = siege_weapon
+	fights_in_main_phase = no
+
+	damage = 0
+	toughness = 10
+
+	siege_tier = 4
+	siege_value = 0.4
+
+	buy_cost = { gold = bombard_recruitment_cost }
+	low_maintenance_cost = { gold = bombard_low_maint_cost }
+	high_maintenance_cost = { gold = bombard_high_maint_cost }
+
+	stack = 10
+	allowed_in_hired_troops = no
+	icon = song_smiths
+}
+
+### Sindar ###
+# Sindar Nobility (Cavalry)
+sindar_nobility = {
+	can_recruit = { sindar_trigger = yes }
+	type = heavy_cavalry
+
+	buy_cost = { gold = 275 }
+	low_maintenance_cost = { gold = 0.4 }
+	high_maintenance_cost = { gold = 1.2 }
+
+	stack = 20
+	damage = 175
+	toughness = 100
+	pursuit = 40
+	screen = 40
+
+	counters = {
+		skirmishers = 1
+		archers = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+	icon = heavy_cavalry
+	allowed_in_hired_troops = no
+}
+
+# Hîr-Hathol (Heavy Infantry)
+hir_hathol = {
+	can_recruit = { sindar_trigger = yes }
+	type = heavy_infantry
+
+	buy_cost = { gold = 240 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
+
+	stack = 30
+	damage = 135
+	toughness = 50
+	pursuit = 25
+	screen = 0
+
+	counters = {
+		pikemen = 1
+		monster = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+# Falathrim Haven-Guard (Pikemen) - Mithlond Spearmen
+falathrim_haven_guard = {
+	can_recruit = { sindar_trigger = yes }
+	type = pikemen
+
+	buy_cost = { gold = 200 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
+
+	stack = 50
+	damage = 45
+	toughness = 50
+	pursuit = 0
+	screen = 40
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = pikemen
+	allowed_in_hired_troops = no
+}
+
+# Sindar Marchwardens (Archers) - in the style of Beleg Strongbow
+marchwardens = {
+	can_recruit = { sindar_trigger = yes }
+	type = archers
+
+	buy_cost = { gold = 260 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
+
+	stack = 30
+	damage = 100
+	toughness = 75
+	pursuit = 30
+	screen = 0
+
+	counters = {
+		skirmishers = 1
+		monster = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = bowmen
+	allowed_in_hired_troops = no
+}
+
+### Galadhrim ###
+# Galadhrim Warriors (Heavy Infantry)
+galadhrim_warriors = {
+	can_recruit = { galadhrim_trigger = yes }
+	type = heavy_infantry
+
+	buy_cost = { gold = 190 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 40
+	damage = 60
+	toughness = 60
+	pursuit = 0
+	screen = 10
+
+	counters = {
+		pikemen = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = galadhrim_warriors
+	allowed_in_hired_troops = no
+}
+
+# Knights of Amroth (Cavalry)
+knights_of_amroth = {
+	can_recruit = { galadhrim_trigger = yes }
+	type = heavy_cavalry
+
+	buy_cost = { gold = 300 }
+	low_maintenance_cost = { gold = 0.5 }
+	high_maintenance_cost = { gold = 1.5 }
+
+	stack = 25
+	damage = 120
+	toughness = 75
+	pursuit = 20
+	screen = 0
+
+	counters = {
+		skirmishers = 1
+		archers = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+	icon = knights_of_amroth
+	allowed_in_hired_troops = no
+}
+
+# Galadhrim Wardens (Skirmishers)
+galadhrim_wardens = {
+	can_recruit = { galadhrim_trigger = yes }
+	type = skirmishers
+
+	buy_cost = { gold = 130 }
+	low_maintenance_cost = { gold = 0.13 }
+	high_maintenance_cost = { gold = 0.39 }
+
+	stack = 60
+	damage = 21
+	toughness = 36
+	pursuit = 10
+	screen = 16
+
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = galadhrim_wardens
+	allowed_in_hired_troops = no
+}
+
+# Galadhrim Archers (Archers)
+galadhrim_archers = {
+	can_recruit = { galadhrim_trigger = yes }
+	type = archers
+
+	buy_cost = { gold = 180 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.9 }
+
+	stack = 40
+	damage = 60
+	toughness = 45
+	pursuit = 30
+	screen = 0
+
+	counters = {
+		skirmishers = 1
+		monster = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = galadhrim_archers
+	allowed_in_hired_troops = no
+}
+
+# Galadhrim Sentinels (Pikemen)
+galadhrim_sentinels = {
+	can_recruit = { galadhrim_trigger = yes }
+	type = pikemen
+
+	buy_cost = { gold = 190 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
+
+	stack = 40
+	damage = 50
+	toughness = 75
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		pikemen = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = galadhrim_sentinels
+	allowed_in_hired_troops = no
+}
+
+### Greenwood ###
+# Noldorin Equestrians (Heavy Cavalry)
+noldor_cavspears = {
+	can_recruit = { greenwood_trigger = yes }
+	type = heavy_cavalry
+
+	buy_cost = { gold = 275 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 30
+	damage = 135
+	toughness = 50
+	pursuit = 30
+	screen = 30
+
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		archers = 1
+		light_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+	#icon = heavy_cavalry
+	icon = royal_elk_riders
+	allowed_in_hired_troops = no
+}
+
+# Lords of The Golden Flower (Heavy Cavalry)
+cav_golden = {
+	can_recruit = { greenwood_trigger = yes }
+	type = heavy_cavalry
+
+	buy_cost = { gold = 275 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 30
+	damage = 135
+	toughness = 50
+	pursuit = 30
+	screen = 30
+
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		archers = 1
+		light_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+	#icon = heavy_cavalry
+	icon = royal_elk_riders
+	allowed_in_hired_troops = no
+}
+
+# Noldorin Spears (Heavy Infantry)
+noldorin_spears = {
+	can_recruit = { greenwood_trigger = yes }
+	type = pikemen
+
+	buy_cost = { gold = 200 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
+
+	stack = 50
+	damage = 45
+	toughness = 50
+	pursuit = 0
+	screen = 40
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = pikemen
+	allowed_in_hired_troops = no
+}
+
+# Border Guards (Heavy Infantry)
+border_guards = {
+	can_recruit = { greenwood_trigger = yes }
+	type = heavy_infantry
+
+	buy_cost = { gold = 240 }
+	low_maintenance_cost = { gold = 0.45 }
+	high_maintenance_cost = { gold = 0.90 }
+
+	stack = 40
+	damage = 72
+	toughness = 55
+	pursuit = 0
+	screen = 30
+
+	counters = {
+		pikemen = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = greenwood_swordsmen
+	allowed_in_hired_troops = no
+}
+
+# Noldorin Sword Infantry (Heavy Infantry)
+noldorin_sword = {
+	can_recruit = { greenwood_trigger = yes }
+	type = heavy_infantry
+
+	buy_cost = { gold = 160 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 50
+	damage = 52
+	toughness = 35
+	pursuit = 0
+	screen = 10
+
+	counters = {
+		pikemen = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = greenwood_swordsmen
+	allowed_in_hired_troops = no
+}
+
+# Marchwardens of Lothlorien (Archers)
+marchwardens_lothlorien = {
+	can_recruit = { greenwood_trigger = yes }
+	type = archers
+
+	buy_cost = { gold = 260 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
+
+	stack = 30
+	damage = 100
+	toughness = 75
+	pursuit = 30
+	screen = 0
+
+	counters = {
+		skirmishers = 1
+		monster = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = bowmen
+	allowed_in_hired_troops = no
+}
+
+# Remnants of the Golden Flower (Heavy Infantry)
+remnants_golden = {
+	can_recruit = { greenwood_trigger = yes }
+	type = heavy_infantry
+
+	buy_cost = { gold = 180 }
+	low_maintenance_cost = { gold = 0.28 }
+	high_maintenance_cost = { gold = 0.84 }
+
+	stack = 40
+	damage = 45
+	toughness = 65
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = gilded_guard
+	allowed_in_hired_troops = no
+}
+
+# Gilded Guard (Pikeman)
+gilded_guard = {
+	can_recruit = { greenwood_trigger = yes }
+	type = pikemen
+
+	buy_cost = { gold = 180 }
+	low_maintenance_cost = { gold = 0.28 }
+	high_maintenance_cost = { gold = 0.84 }
+
+	stack = 40
+	damage = 45
+	toughness = 65
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = gilded_guard
+	allowed_in_hired_troops = no
+}
+
+# Greenwood Swordsmen (Heavy Infantry)
+greenwood_swordsmen = {
+	can_recruit = { greenwood_trigger = yes }
+	type = heavy_infantry
+
+	buy_cost = { gold = 160 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 50
+	damage = 52
+	toughness = 35
+	pursuit = 0
+	screen = 10
+
+	counters = {
+		pikemen = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = greenwood_swordsmen
+	allowed_in_hired_troops = no
+}
+
+# Greenwood Archers (Archers)
+greenwood_archers = {
+	can_recruit = { greenwood_trigger = yes }
+	type = archers
+
+	buy_cost = { gold = 145 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
+
+	stack = 50
+	damage = 60
+	toughness = 30
+	pursuit = 25
+	screen = 0
+
+	counters = {
+		skirmishers = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = greenwood_archers
+	allowed_in_hired_troops = no
+}
+
+# Silvan Rangers (Skirmishers)
+silvan_rangers = {
+	can_recruit = { greenwood_trigger = yes }
+	type = skirmishers
+
+	buy_cost = { gold = 110 }
+	low_maintenance_cost = { gold = 0.15 }
+	high_maintenance_cost = { gold = 0.45 }
+
+	stack = 75
+	damage = 15
+	toughness = 32
+	pursuit = 15
+	screen = 15
+
+	counters = {
+		skirmishers = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	#icon = skirmishers
+	icon = silvan_rangers
+	allowed_in_hired_troops = no
+}
+
+# Royal Elk Riders (Elk Cavalry)
+royal_elk_riders = {
+	can_recruit = { greenwood_trigger = yes }
+	type = heavy_cavalry
+
+	buy_cost = { gold = 275 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 30
+	damage = 135
+	toughness = 50
+	pursuit = 30
+	screen = 30
+
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		archers = 1
+		light_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+	#icon = heavy_cavalry
+	icon = royal_elk_riders
+	allowed_in_hired_troops = no
+}
+
+# Theladagnyr (Anti-monster)
+theladagnyr = {
+	can_recruit = { greenwood_trigger = yes }
+	type = heavy_infantry
+
+	buy_cost = { gold = 250 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
+
+	stack = 40
+	damage = 50
+	toughness = 70
+	pursuit = 25
+	screen = 0
+
+	counters = {
+		monster = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = theladagnyr
+	allowed_in_hired_troops = no
+}
+
+
+### Avari ###
+# Nelyarin Pikemen (Pikemen)
+nelyarin_pikemen = {
+	can_recruit = { culture = { has_cultural_parameter = unlock_maa_nelyarin_pikemen } }
+	type = pikemen
+
+	buy_cost = { gold = 160 }
+	low_maintenance_cost = { gold = 0.28 }
+	high_maintenance_cost = { gold = 0.84 }
+
+	stack = 60
+	damage = 30
+	toughness = 40
+	pursuit = 0
+	screen = 10
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = nelyarin_pikemen
+	allowed_in_hired_troops = no
+}
+
+# Nelyarin Swordsmen (Heavy Infantry)
+nelyarin_swordsmen = {
+	can_recruit = { culture = { has_cultural_parameter = unlock_maa_nelyarin_swordsmen } }
+	type = heavy_infantry
+
+	buy_cost = { gold = 150 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+
+	stack = 60
+	damage = 32
+	toughness = 40
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		pikemen = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = nelyarin_swordsmen
+	allowed_in_hired_troops = no
+}
+
+# Nelyarin Bowmen (Archers)
+nelyarin_archers = {
+	can_recruit = { culture = { has_cultural_parameter = unlock_maa_nelyarin_archers } }
+	type = archers
+
+	buy_cost = { gold = 155 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.9 }
+
+	stack = 80
+	damage = 44
+	toughness = 15
+	pursuit = 30
+	screen = 0
+
+	counters = {
+		skirmishers = 1
+	}
+
+	terrain_bonus = {
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = nelyarin_archers
+	allowed_in_hired_troops = no
+}
+
+# Neldoreth's Borderwardens (Border Guard Mounted Bowmen)
+neldoreth_borderwardens = {
+	can_recruit = { neldoreth_trigger = yes }
+	type = archer_cavalry
+
+	buy_cost = { gold = 260 }
+	low_maintenance_cost = { gold = 0.35 }
+	high_maintenance_cost = { gold = 1.05 }
+
+	stack = 30
+	damage = 160
+	toughness = 40
+	pursuit = 50
+	screen = 100
+
+	counters = {
+		skirmishers = 1
+		monster = 1
+		heavy_infantry = 1
+	}
+
+	terrain_bonus = {
+		jungle = { damage = -80 pursuit = -20 }
+		mountains = { damage = -120 pursuit = -30 }
+		desert_mountains = { damage = -120 pursuit = -30 }
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = neldoreth_borderwardens
+	allowed_in_hired_troops = no
+}
+
+# Nuïnevari (Forest Spirits)
+nuinevari = { # Unlocked via Innovation
+	type = monster
+
+	buy_cost = { gold = 200 piety = 200 }
+	low_maintenance_cost = { gold = 0.35 piety = 0.1 }
+	high_maintenance_cost = { gold = 1.05 piety = 0.3 }
+
+	stack = 10
+	damage = 380
+	toughness = 220
+	pursuit = 30
+	screen = 30
+
+	counters = {
+		archers = 1
+		skirmishers = 1
+		pikemen = 1
+		heavy_infantry = 1
+	}
+
+	terrain_bonus = {
+		dune_sea = {
+			damage = -300 toughness = -200 pursuit = -30 screen = -20
+		}
+		desert = {
+			damage = -200 toughness = -100 pursuit = -10 screen = -10
+		}
+		red_desert = {
+			damage = -200 toughness = -100 pursuit = -10 screen = -10
+		}
+		wetlands = {
+			damage = 100 toughness = 50 pursuit = 10 screen = 10
+		}
+		floodplains = {
+			damage = 100 toughness = 50 pursuit = 10 screen = 10
+		}
+	}
+
+	winter_bonus = {
+	}
+
+	ai_quality = { value = culture_ai_weight_monster }
+	icon = nuinevari
+	allowed_in_hired_troops = no
+}
