@@ -23,6 +23,8 @@ Example:
 
 ### CW_LOTR_Cultures.xml
 Cultures.xml modifying is not required to simply add custom regiments. For detailed information: https://ck3.paradoxwikis.com/Regiments_modding
+
+
 Example:
 ```
 ### Noldor ###
