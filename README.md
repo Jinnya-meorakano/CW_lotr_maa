@@ -19,9 +19,33 @@ Example:
 3. max="**regiment type**" (variables: INFANTRY, CAVALRY, RANGED, numbers for monsterous units)
 4. script="**example_maa_unit_**"
 
+
+
 ### CW_LOTR_Cultures.xml
 Cultures.xml modifying is not required to simply add custom regiments.
+Example:
+```
+### Noldor ###
+## - The armies of the Noldor are few in number in the dwindling days of the Third Age, but in quality are unparalleled
+# Noldor Swordsman (Heavy Infantry)
+noldor_swordsmen = {
+	can_recruit = { noldor_trigger = yes }
+	type = heavy_infantry
 
+  ================
+  CUSTOM MAA STATS
+  ================
+
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
+	allowed_in_hired_troops = no
+}
+```
+1. Faction: ### Faction name ###
+2. Regiment info: # Regiment title (Type)
+                  regiment_name
+                  can_recruit = { **faction**_trigger = yes }
+                  type = (pikemen, heavy_infantry, archers, heavy_cavalry, skirmishers, siege_weapon)
 ***
 # Reamls in Exile files
 ### lotr_elven_regiment_types.txt
