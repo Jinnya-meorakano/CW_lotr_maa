@@ -22,7 +22,7 @@ Example:
 
 
 ### CW_LOTR_Cultures.xml
-Cultures.xml modifying is not required to simply add custom regiments.
+Cultures.xml is not required to be modified for simply adding custom regiments.
 
 ***
 # Reamls in Exile files
