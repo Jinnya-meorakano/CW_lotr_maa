@@ -22,7 +22,15 @@ Example:
 
 
 ### CW_LOTR_Cultures.xml
-Cultures.xml modifying is not required to simply add custom regiments. For detailed information: https://ck3.paradoxwikis.com/Regiments_modding
+Cultures.xml modifying is not required to simply add custom regiments.
+
+***
+# Reamls in Exile files
+### lotr_elven_regiment_types.txt
+File location: (/Realms in Exile/common/men_at_arms_types/)
+
+
+For detailed information: https://ck3.paradoxwikis.com/Regiments_modding
 
 
 Example:
@@ -49,11 +57,6 @@ noldor_swordsmen = {
  * regiment_name
  * can_recruit = { **faction**_trigger = yes }
  * type = (pikemen, heavy_infantry, archers, heavy_cavalry, skirmishers, siege_weapon)
-***
-# Reamls in Exile files
-### lotr_elven_regiment_types.txt
-File location: (/Realms in Exile/common/men_at_arms_types/)
-
 
 ### lotr_maa_l_english.yml
 File location: (/Realms in Exile/localization/english/culture/)
