@@ -13,6 +13,13 @@ Simple guide for adding custom men-at-arms regiments
     </Faction>
   </FactionsGroups>
 ```
+1. type="**example maa title**"
+2. key="**Attila unit key in land_units_tables**"
+3. max="**regiment type**"
+4. script="**example_maa_unit_**"
+
+
+
 ##### CW_LOTR_Cultures.xml
 Cultures.xml modifying is not required to simply add custom regiments.
 
