@@ -171,13 +171,6 @@
         <MenAtArm type="Silvan Rangers" key="exe_wr_forest_assassins" max="INFANTRY" script="silvan_rangers_unit_"></MenAtArm>
         <MenAtArm type="Royal Elk Riders" key="exe_wr_elvenking_riders_elk" max="CAVALRY" script="royal_elk_riders_unit_"></MenAtArm>
 		<MenAtArm type="Theladagnyr" key="exe_wr_greenwood_glaives" max="INFANTRY" script="theladagnyr_unit_"></MenAtArm>
-		  <MenAtArm type="Remnants of the Golden Flower" key="exe_lin_remnants_golden_flower" max="INFANTRY" script="remnants_golden_unit_"></MenAtArm>
-		<MenAtArm type="Marchwardens of Lothlorien" key="Marchwarden" max="RANGED" script="marchwardens_lothlorien_unit_"></MenAtArm>
-		<MenAtArm type="Noldorin Sword Infantry" key="exe_lin_sword_infantry" max="INFANTRY" script="noldorin_sword_unit_"></MenAtArm>
-		<MenAtArm type="Noldorin Spears" key="lin_spearmen" max="INFANTRY" script="noldorin_spears_unit_"></MenAtArm>
-		<MenAtArm type="Border Guards" key="exe_wr_border_guards" max="INFANTRY" script="border_guards_unit_"></MenAtArm>
-		<MenAtArm type="Lords of The Golden Flower" key="exe_iml_lords_golden_flower" max="CAVALRY" script="cav_golden_unit_"></MenAtArm>
-		<MenAtArm type="Noldorin Equestrians" key="lin_cavalry" max="CAVALRY" script="noldor_cavspears_unit_"></MenAtArm>
 
 		<MenAtArm type="Nelyarin Pikemen" key="iml_pikemen" max="INFANTRY" script="nelyarin_pikemen_unit_"></MenAtArm>
         <MenAtArm type="Nelyarin Swordsmen" key="iml_guards" max="INFANTRY" script="nelyarin_swordsmen_unit_"></MenAtArm>
@@ -316,6 +309,13 @@
 		<MenAtArm type="Retinue Skirmishers" key="gon_lebennin_marines" max="INFANTRY" script="accolade_maa_skirmishers_unit_"></MenAtArm>
 		<MenAtArm type="Retinue Vanguard" key="gon_lossarnach_warriors" max="INFANTRY" script="accolade_maa_vanguard_unit_"></MenAtArm>
 
+	  <MenAtArm type="Remnants of the Golden Flower" key="exe_lin_remnants_golden_flower" max="INFANTRY" script="remnants_golden_unit_"></MenAtArm>
+		<MenAtArm type="Marchwardens of Lothlorien" key="Marchwarden" max="RANGED" script="marchwardens_lothlorien_unit_"></MenAtArm>
+		<MenAtArm type="Noldorin Sword Infantry" key="exe_lin_sword_infantry" max="INFANTRY" script="noldorin_sword_unit_"></MenAtArm>
+		<MenAtArm type="Noldorin Spears" key="lin_spearmen" max="INFANTRY" script="noldorin_spears_unit_"></MenAtArm>
+		<MenAtArm type="Border Guards" key="exe_wr_border_guards" max="INFANTRY" script="border_guards_unit_"></MenAtArm>
+		<MenAtArm type="Lords of The Golden Flower" key="exe_iml_lords_golden_flower" max="CAVALRY" script="cav_golden_unit_"></MenAtArm>
+		<MenAtArm type="Noldorin Equestrians" key="lin_cavalry" max="CAVALRY" script="noldor_cavspears_unit_"></MenAtArm>
 	</Faction>
 
 <Faction name="Gondor">
