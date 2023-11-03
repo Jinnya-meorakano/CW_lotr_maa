@@ -52,6 +52,8 @@ noldor_swordsmen = {
 }
 ```
 1. Faction: ### Faction name ###
+
+
 2. Regiment info:
  * Regiment title (Type)
  * regiment_title
