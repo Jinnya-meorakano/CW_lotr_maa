@@ -43,8 +43,17 @@ noldor_swordsmen = {
 ```
 1. Faction: ### Faction name ###
 2. Regiment info: # Regiment title (Type)
+
+
+
                   regiment_name
+
+
+
                   can_recruit = { **faction**_trigger = yes }
+
+
+
                   type = (pikemen, heavy_infantry, archers, heavy_cavalry, skirmishers, siege_weapon)
 ***
 # Reamls in Exile files
