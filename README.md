@@ -14,10 +14,10 @@ Example:
     </Faction>
   </FactionsGroups>
 ```
-1. type="**example maa title**"
+1. type="**Regiment title**"
 2. key="**Attila unit key in land_units_tables**"
 3. max="**regiment type**" (variables: INFANTRY, CAVALRY, RANGED, numbers for monsterous units)
-4. script="**example_maa_unit_**"
+4. script="**regiment_title_unit_**"
 
 
 
@@ -54,7 +54,7 @@ noldor_swordsmen = {
 1. Faction: ### Faction name ###
 2. Regiment info:
  * Regiment title (Type)
- * regiment_name
+ * regiment_title
  * can_recruit = { **faction**_trigger = yes }
  * type = (pikemen, heavy_infantry, archers, heavy_cavalry, skirmishers, siege_weapon)
 
