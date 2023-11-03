@@ -9,7 +9,13 @@ Simple guide for adding custom men-at-arms regiments
 ```
   <FactionsGroups>
     <Faction name="Default">
-      <MenAtArm type="Bowmen" key="gon_archers" max="RANGED" script="bowmen_unit_"></MenAtArm>
+      <MenAtArm type="**example maa title**" key="**Attila unit key in land_units_tables**" max="**regiment type**" script="**example_maa_unit_**"></MenAtArm>
     </Faction>
   </FactionsGroups>
 ```
+##### CW_LOTR_Cultures.xml
+Cultures.xml modifying is not required to simply add custom regiments.
+***
+### Reamls in Exile files
+##### lotr_elven_regiment_types.txt
+File location: (/Realms in Exile/common/men_at_arms_types/)
