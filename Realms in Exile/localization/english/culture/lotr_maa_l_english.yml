@@ -39,6 +39,8 @@
  galadhrim_archers_flavor:0 "While all Elves are adept at the use of a bow, these archers are hand-picked from among the Galadhrim for their exceptional skill."
  galadhrim_sentinels:0 "Galadhrim Sentinels"
  galadhrim_sentinels_flavor:0 "Armed with pikes and well-armored, the sentinels form a potent defense against all who would menace Lorien."
+ galadhrim_warriors:0 "Galadhrim Warriors"
+ galadhrim_warriors_flavor:0 "Galadhrim Warriors"
 
  ## Greenwood ##
  noldor_cavspears:0 "Noldorin Equestrians"
