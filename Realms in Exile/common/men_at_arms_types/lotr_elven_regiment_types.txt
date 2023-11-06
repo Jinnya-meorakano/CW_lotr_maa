@@ -480,29 +480,24 @@ galadhrim_sentinels = {
 	allowed_in_hired_troops = no
 }
 
-/// continue
 # Lorien Sword Company (Heavy Infantry)
 lorien_swordcompany = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = heavy_infantry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 200 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.2 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
+	stack = 50
+	damage = 30
+	toughness = 45
 	pursuit = 0
-	screen = 0
+	screen = 10
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		light_cavalry = 1
 	}
 
 	terrain_bonus = {
@@ -511,8 +506,8 @@ lorien_swordcompany = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
 	allowed_in_hired_troops = no
 }
 
@@ -521,23 +516,18 @@ amroth_sentinels = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = heavy_infantry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 350 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 30
+	damage = 140
+	toughness = 125
+	pursuit = 10
+	screen = 20
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -546,8 +536,8 @@ amroth_sentinels = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
 	allowed_in_hired_troops = no
 }
 
@@ -556,23 +546,18 @@ galadhrim_swordinf = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = heavy_infantry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 400 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 175
+	toughness = 125
+	pursuit = 10
+	screen = 30
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -580,9 +565,8 @@ galadhrim_swordinf = {
 
 	winter_bonus = {
 	}
-
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
 	allowed_in_hired_troops = no
 }
 
@@ -591,23 +575,21 @@ lorien_defenders = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = heavy_infantry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 700 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.7 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 320
+	toughness = 350
+	pursuit = 20
+	screen = 80
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		pikemen = 1
+		archers = 1
+		monster = 1
 	}
 
 	terrain_bonus = {
@@ -616,8 +598,8 @@ lorien_defenders = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
 	allowed_in_hired_troops = no
 }
 
@@ -626,23 +608,20 @@ lorien_guards = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = heavy_infantry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 500 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 30
+	damage = 200
+	toughness = 180
+	pursuit = 35
+	screen = 40
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -651,8 +630,8 @@ lorien_guards = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
 	allowed_in_hired_troops = no
 }
 
@@ -661,23 +640,20 @@ galadhrim_swordwarriors = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = heavy_infantry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 600 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 30
+	damage = 220
+	toughness = 200
+	pursuit = 40
+	screen = 40
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -686,8 +662,8 @@ galadhrim_swordwarriors = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
 	allowed_in_hired_troops = no
 }
 
@@ -696,23 +672,20 @@ lorien_swords = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = heavy_infantry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 1000 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.9 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 300
+	toughness = 350
+	pursuit = 40
+	screen = 60
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -721,8 +694,8 @@ lorien_swords = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_heavy_infantry }
+	icon = heavy_infantry
 	allowed_in_hired_troops = no
 }
 
@@ -731,23 +704,20 @@ naith_inf = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = pikemen
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 350 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
+	stack = 30
+	damage = 125
+	toughness = 160
 	pursuit = 0
-	screen = 0
+	screen = 10
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		light_cavalry = 1
+		heavy_cavalry = 1
+		monster = 1
 	}
 
 	terrain_bonus = {
@@ -756,8 +726,8 @@ naith_inf = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = pikemen
 	allowed_in_hired_troops = no
 }
 
@@ -766,23 +736,20 @@ galadhrim_spearinf = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = pikemen
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 380 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
+	stack = 30
+	damage = 150
+	toughness = 180
 	pursuit = 0
-	screen = 0
+	screen = 15
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		light_cavalry = 1
+		heavy_cavalry = 1
+		monster = 1
 	}
 
 	terrain_bonus = {
@@ -791,8 +758,8 @@ galadhrim_spearinf = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = pikemen
 	allowed_in_hired_troops = no
 }
 
@@ -801,23 +768,20 @@ heroes_amonlanc = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = pikemen
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 560 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
+	stack = 30
+	damage = 210
+	toughness = 250
 	pursuit = 0
-	screen = 0
+	screen = 20
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		light_cavalry = 1
+		heavy_cavalry = 1
+		monster = 1
 	}
 
 	terrain_bonus = {
@@ -826,8 +790,8 @@ heroes_amonlanc = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = pikemen
 	allowed_in_hired_troops = no
 }
 
@@ -836,23 +800,20 @@ sentinels_celinamroth = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = pikemen
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 700 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
+	stack = 20
+	damage = 300
+	toughness = 380
 	pursuit = 0
-	screen = 0
+	screen = 40
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		light_cavalry = 1
+		heavy_cavalry = 1
+		monster = 1
 	}
 
 	terrain_bonus = {
@@ -861,8 +822,8 @@ sentinels_celinamroth = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = pikemen
 	allowed_in_hired_troops = no
 }
 
@@ -871,23 +832,21 @@ lorien_spearcompany = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = pikemen
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 150 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
+	stack = 50
+	damage = 100
+	toughness = 140
 	pursuit = 0
-	screen = 0
+	screen = 20
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		light_cavalry = 1
+		heavy_cavalry = 1
+		monster = 1
+		heavy_infantry = 1
 	}
 
 	terrain_bonus = {
@@ -896,8 +855,8 @@ lorien_spearcompany = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = pikemen
 	allowed_in_hired_troops = no
 }
 
@@ -906,23 +865,21 @@ galadhrim_spearwarriors = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = pikemen
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 350 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
+	stack = 30
+	damage = 125
+	toughness = 160
 	pursuit = 0
-	screen = 0
+	screen = 40
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		light_cavalry = 1
+		heavy_cavalry = 1
+		monster = 1
+		heavy_infantry = 1
 	}
 
 	terrain_bonus = {
@@ -931,8 +888,8 @@ galadhrim_spearwarriors = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = pikemen
 	allowed_in_hired_troops = no
 }
 
@@ -941,23 +898,19 @@ lorien_outriders = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = light_cavalry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 150 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 40
+	damage = 90
+	toughness = 80
+	pursuit = 60
+	screen = 20
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -966,8 +919,8 @@ lorien_outriders = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = light_cavalry
 	allowed_in_hired_troops = no
 }
 
@@ -976,23 +929,22 @@ nimrodel_patrollers = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = light_cavalry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 350 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.9 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 175
+	toughness = 100
+	pursuit = 100
+	screen = 60
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		heavy_cavalry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1001,8 +953,8 @@ nimrodel_patrollers = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+	icon = light_cavalry
 	allowed_in_hired_troops = no
 }
 
@@ -1011,23 +963,22 @@ lorien_bowcavalry = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = light_cavalry
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 500 }
+	low_maintenance_cost = { gold = 0.4 }
+	high_maintenance_cost = { gold = 1.2 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 250
+	toughness = 150
+	pursuit = 140
+	screen = 60
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		heavy_cavalry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1036,8 +987,8 @@ lorien_bowcavalry = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_heavy_cavalry }
+	icon = light_cavalry
 	allowed_in_hired_troops = no
 }
 
@@ -1046,23 +997,21 @@ lorien_sentries = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 180 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
+	stack = 40
+	damage = 90
+	toughness = 80
+	pursuit = 10
 	screen = 0
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1071,8 +1020,8 @@ lorien_sentries = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
@@ -1081,23 +1030,21 @@ galadhon_archers = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 290 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
+	stack = 30
+	damage = 150
+	toughness = 100
+	pursuit = 30
 	screen = 0
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1106,8 +1053,8 @@ galadhon_archers = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
@@ -1116,23 +1063,21 @@ lorinand_rangers = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 350 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
+	stack = 30
+	damage = 200
+	toughness = 100
+	pursuit = 50
 	screen = 0
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1141,8 +1086,8 @@ lorinand_rangers = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
@@ -1151,23 +1096,21 @@ galadhrim_bowwarriors = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 400 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 30
+	damage = 240
+	toughness = 180
+	pursuit = 40
+	screen = 20
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1176,8 +1119,8 @@ galadhrim_bowwarriors = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
@@ -1186,23 +1129,21 @@ lorien_sentinels = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 430 }
+	low_maintenance_cost = { gold = 0.1 }
+	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 30
+	damage = 250
+	toughness = 200
+	pursuit = 40
+	screen = 20
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1211,8 +1152,8 @@ lorien_sentinels = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
@@ -1221,23 +1162,21 @@ lorien_bows = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 500 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 290
+	toughness = 250
+	pursuit = 50
+	screen = 25
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1246,8 +1185,8 @@ lorien_bows = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
@@ -1256,23 +1195,21 @@ twilight_guard = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 600 }
+	low_maintenance_cost = { gold = 0.2 }
+	high_maintenance_cost = { gold = 0.6 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 330
+	toughness = 300
+	pursuit = 50
+	screen = 40
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1281,8 +1218,8 @@ twilight_guard = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
@@ -1291,23 +1228,21 @@ marchwardens_goldenwood = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 900 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.9 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 380
+	toughness = 400
+	pursuit = 50
+	screen = 60
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1316,8 +1251,8 @@ marchwardens_goldenwood = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
@@ -1326,23 +1261,21 @@ marchwardens_lothlorien = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 900 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.9 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 380
+	toughness = 400
+	pursuit = 50
+	screen = 60
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1351,8 +1284,8 @@ marchwardens_lothlorien = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
@@ -1361,23 +1294,21 @@ marchwardens_greenwood = {
 	can_recruit = { galadhrim_trigger = yes }
 	type = archers
 
-	buy_cost = { gold = 0 }
-	low_maintenance_cost = { gold = 0 }
-	high_maintenance_cost = { gold = 0 }
+	buy_cost = { gold = 900 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.9 }
 
-	stack = 0
-	damage = 0
-	toughness = 0
-	pursuit = 0
-	screen = 0
+	stack = 20
+	damage = 380
+	toughness = 400
+	pursuit = 50
+	screen = 60
 
 	counters = {
-		skirmishers = 0
-		heavy_infantry = 0
-		archers = 0
-		light_cavalry = 0
-		heavy_cavalry = 0
-		monster = 0
+		skirmishers = 1
+		heavy_infantry = 1
+		monster = 1
+		pikemen = 1
 	}
 
 	terrain_bonus = {
@@ -1386,8 +1317,8 @@ marchwardens_greenwood = {
 	winter_bonus = {
 	}
 
-	ai_quality = { value = culture_ai_weight_0 }
-	icon = 0
+	ai_quality = { value = culture_ai_weight_archers }
+	icon = archers
 	allowed_in_hired_troops = no
 }
 
