@@ -62,3 +62,8 @@ noldor_swordsmen = {
 
 ### lotr_maa_l_english.yml
 File location: (/Realms in Exile/localization/english/culture/)
+```
+## Faction ##
+regiment_title:0 "Regiment Title"
+regiment_title_flavor:0 "Regiment Description"
+```
