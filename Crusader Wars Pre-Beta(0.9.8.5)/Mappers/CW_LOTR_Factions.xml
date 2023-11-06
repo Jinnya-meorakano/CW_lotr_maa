@@ -342,6 +342,7 @@
 		<MenAtArm type="Twilight Guard" key="null" max="null" script="null"></MenAtArm>
 		<MenAtArm type="Marchwardens of the Golden Wood" key="null" max="null" script="null"></MenAtArm>
 		<MenAtArm type="Marchwardens of Lothlorien" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Marchwardens of Greenwood" key="null" max="null" script="null"></MenAtArm>
 	</Faction>
 
 <Faction name="Gondor">
