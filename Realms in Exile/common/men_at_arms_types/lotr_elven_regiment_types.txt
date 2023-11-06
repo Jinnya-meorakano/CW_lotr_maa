@@ -480,6 +480,7 @@ galadhrim_sentinels = {
 	allowed_in_hired_troops = no
 }
 
+/// continue
 # Lorien Sword Company (Heavy Infantry)
 lorien_swordcompany = {
 	can_recruit = { galadhrim_trigger = yes }
