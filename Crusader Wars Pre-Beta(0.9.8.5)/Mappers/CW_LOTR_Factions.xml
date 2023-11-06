@@ -316,6 +316,32 @@
 		<MenAtArm type="Border Guards" key="exe_wr_border_guards" max="INFANTRY" script="border_guards_unit_"></MenAtArm>
 		<MenAtArm type="Lords of The Golden Flower" key="exe_iml_lords_golden_flower" max="CAVALRY" script="cav_golden_unit_"></MenAtArm>
 		<MenAtArm type="Noldorin Equestrians" key="lin_cavalry" max="CAVALRY" script="noldor_cavspears_unit_"></MenAtArm>
+
+		<MenAtArm type="Lorien Sword Company" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Amroth Sentinels" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Galadhrim Sword Infantry" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Defenders of Lorien" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Lorinand Guards" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Galadhrim Sword Warriors" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Lorien Swords" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Naith Infantry" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Galadhrim Spear Infantry" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Heroes of Amon Lanc" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Sentinels of Celin Amroth" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Lorien Spear Company" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Galadhrim Spear Warriors" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Lorien Outriders" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Nimrodel Patrollers" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Lorien Bow Cavalry" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Lorien Sentries" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Galadhon Archers" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Lorinand Rangers" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Galadhrim Bow Warriors" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Lorien Sentinels" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Lorien Bows" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Twilight Guard" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Marchwardens of the Golden Wood" key="null" max="null" script="null"></MenAtArm>
+		<MenAtArm type="Marchwardens of Lothlorien" key="null" max="null" script="null"></MenAtArm>
 	</Faction>
 
 <Faction name="Gondor">
