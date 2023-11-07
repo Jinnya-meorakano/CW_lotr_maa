@@ -1135,8 +1135,8 @@
 		<General key="dale_rhovanion_regent"></General>
 		<Knights key="dale_cavalry_regiment"></Knights>
 
-		<Levies type="Levy Spearmen" key="dale_shipmen"></Levies>
-		<Levies type="Levy Infantry" key="dale_spear_militia"></Levies>
+		<Levies type="Levy Spearmen" key="dale_spear_militia"></Levies>
+		<Levies type="Levy Infantry" key="dale_shipmen"></Levies>
 		<Levies type="Levy Ranged" key="dale_yeomen"></Levies>
 
 		<MenAtArm type="Light Footmen" key="dale_swordsmen"></MenAtArm>
@@ -1166,8 +1166,8 @@
 		<General key="ere_mansion_reclaimers"></General>
 		<Knights key="ere_sons_of_mountain"></Knights>
 
-		<Levies type="Levy Spearmen" key="ere_dwarven_company"></Levies>
-		<Levies type="Levy Infantry" key="ere_dwarven_spearmen"></Levies>
+		<Levies type="Levy Spearmen" key="ere_dwarven_spearmen"></Levies>
+		<Levies type="Levy Infantry" key="ere_dwarven_company"></Levies>
 		<Levies type="Levy Ranged" key="ere_dwarven_ranged_travellers"></Levies>
 
 		<MenAtArm type="Light Footmen" key="ere_dwarven_warriors"></MenAtArm>
