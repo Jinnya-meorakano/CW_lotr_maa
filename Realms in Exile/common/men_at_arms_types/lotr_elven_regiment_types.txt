@@ -480,37 +480,6 @@ galadhrim_sentinels = {
 	allowed_in_hired_troops = no
 }
 
-# Lorien Sword Company (Heavy Infantry)
-lorien_swordcompany = {
-	can_recruit = { galadhrim_trigger = yes }
-	type = heavy_infantry
-
-	buy_cost = { gold = 200 }
-	low_maintenance_cost = { gold = 0.1 }
-	high_maintenance_cost = { gold = 0.2 }
-
-	stack = 50
-	damage = 30
-	toughness = 45
-	pursuit = 0
-	screen = 10
-
-	counters = {
-		skirmishers = 1
-		light_cavalry = 1
-	}
-
-	terrain_bonus = {
-	}
-
-	winter_bonus = {
-	}
-
-	ai_quality = { value = culture_ai_weight_heavy_infantry }
-	icon = heavy_infantry
-	allowed_in_hired_troops = no
-}
-
 # Amroth Sentinels (Heavy Infantry)
 amroth_sentinels = {
 	can_recruit = { galadhrim_trigger = yes }
@@ -827,39 +796,6 @@ sentinels_celinamroth = {
 	allowed_in_hired_troops = no
 }
 
-# Lorien Spear Company (Pikeman)
-lorien_spearcompany = {
-	can_recruit = { galadhrim_trigger = yes }
-	type = pikemen
-
-	buy_cost = { gold = 150 }
-	low_maintenance_cost = { gold = 0.1 }
-	high_maintenance_cost = { gold = 0.3 }
-
-	stack = 50
-	damage = 100
-	toughness = 140
-	pursuit = 0
-	screen = 20
-
-	counters = {
-		light_cavalry = 1
-		heavy_cavalry = 1
-		monster = 1
-		heavy_infantry = 1
-	}
-
-	terrain_bonus = {
-	}
-
-	winter_bonus = {
-	}
-
-	ai_quality = { value = culture_ai_weight_pikemen }
-	icon = pikemen
-	allowed_in_hired_troops = no
-}
-
 # Galadhrim Spear Warriors (Pikeman)
 galadhrim_spearwarriors = {
 	can_recruit = { galadhrim_trigger = yes }
@@ -989,39 +925,6 @@ lorien_bowcavalry = {
 
 	ai_quality = { value = culture_ai_weight_heavy_cavalry }
 	icon = light_cavalry
-	allowed_in_hired_troops = no
-}
-
-# Lorien Sentries (Archers)
-lorien_sentries = {
-	can_recruit = { galadhrim_trigger = yes }
-	type = archers
-
-	buy_cost = { gold = 180 }
-	low_maintenance_cost = { gold = 0.1 }
-	high_maintenance_cost = { gold = 0.3 }
-
-	stack = 40
-	damage = 90
-	toughness = 80
-	pursuit = 10
-	screen = 0
-
-	counters = {
-		skirmishers = 1
-		heavy_infantry = 1
-		monster = 1
-		pikemen = 1
-	}
-
-	terrain_bonus = {
-	}
-
-	winter_bonus = {
-	}
-
-	ai_quality = { value = culture_ai_weight_archers }
-	icon = archers
 	allowed_in_hired_troops = no
 }
 
