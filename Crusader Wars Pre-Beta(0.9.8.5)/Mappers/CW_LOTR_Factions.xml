@@ -174,7 +174,6 @@
 		<MenAtArm type="Galadhrim Spear Infantry" key="Galadhrim_Spear_Infantry" max="INFANTRY" script="galadhrim_spearinf_unit_"></MenAtArm>
 		<MenAtArm type="Heroes of Amon Lanc" key="loth_heroes_amon_lanc" max="INFANTRY" script="heroes_amonlanc_unit_"></MenAtArm>
 		<MenAtArm type="Sentinels of Celin Amroth" key="koh_celin_amroth_sentinels" max="INFANTRY" script="sentinels_celinamroth_unit_"></MenAtArm>
-		<MenAtArm type="Galadhrim Spear Warriors" key="loth_galad_spear_warriors" max="INFANTRY" script="galadhrim_spearwarriors_unit_"></MenAtArm>
 		<MenAtArm type="Lorien Outriders" key="loth_lor_outriders" max="CAVALRY" script="lorien_outriders_unit_"></MenAtArm>
 		<MenAtArm type="Nimrodel Patrollers" key="loth_nimrodel_patrollers" max="CAVALRY" script="nimrodel_patrollers_unit_"></MenAtArm>
 		<MenAtArm type="Lorien Bow Cavalry" key="Lorien_Bow_Cav" max="CAVALRY" script="lorien_bowcavalry_unit_"></MenAtArm>
