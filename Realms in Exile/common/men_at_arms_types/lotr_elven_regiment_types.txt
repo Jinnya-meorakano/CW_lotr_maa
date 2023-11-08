@@ -796,39 +796,6 @@ sentinels_celinamroth = {
 	allowed_in_hired_troops = no
 }
 
-# Galadhrim Spear Warriors (Pikeman)
-galadhrim_spearwarriors = {
-	can_recruit = { galadhrim_trigger = yes }
-	type = pikemen
-
-	buy_cost = { gold = 350 }
-	low_maintenance_cost = { gold = 0.1 }
-	high_maintenance_cost = { gold = 0.3 }
-
-	stack = 30
-	damage = 125
-	toughness = 160
-	pursuit = 0
-	screen = 40
-
-	counters = {
-		light_cavalry = 1
-		heavy_cavalry = 1
-		monster = 1
-		heavy_infantry = 1
-	}
-
-	terrain_bonus = {
-	}
-
-	winter_bonus = {
-	}
-
-	ai_quality = { value = culture_ai_weight_pikemen }
-	icon = pikemen
-	allowed_in_hired_troops = no
-}
-
 # Lorien Outriders (Light Cavalry)
 lorien_outriders = {
 	can_recruit = { galadhrim_trigger = yes }
