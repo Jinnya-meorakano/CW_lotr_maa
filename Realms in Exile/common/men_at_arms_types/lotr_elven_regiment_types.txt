@@ -961,39 +961,6 @@ lorinand_rangers = {
 	allowed_in_hired_troops = no
 }
 
-# Galadhrim Bow Warriors (Archers)
-galadhrim_bowwarriors = {
-	can_recruit = { galadhrim_trigger = yes }
-	type = archers
-
-	buy_cost = { gold = 400 }
-	low_maintenance_cost = { gold = 0.1 }
-	high_maintenance_cost = { gold = 0.3 }
-
-	stack = 30
-	damage = 240
-	toughness = 180
-	pursuit = 40
-	screen = 20
-
-	counters = {
-		skirmishers = 1
-		heavy_infantry = 1
-		monster = 1
-		pikemen = 1
-	}
-
-	terrain_bonus = {
-	}
-
-	winter_bonus = {
-	}
-
-	ai_quality = { value = culture_ai_weight_archers }
-	icon = archers
-	allowed_in_hired_troops = no
-}
-
 # Lorien Sentinels (Archers)
 lorien_sentinels = {
 	can_recruit = { galadhrim_trigger = yes }
