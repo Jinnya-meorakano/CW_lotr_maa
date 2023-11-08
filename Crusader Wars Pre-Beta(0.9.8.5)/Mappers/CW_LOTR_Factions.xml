@@ -179,7 +179,6 @@
 		<MenAtArm type="Lorien Bow Cavalry" key="Lorien_Bow_Cav" max="CAVALRY" script="lorien_bowcavalry_unit_"></MenAtArm>
 		<MenAtArm type="Galadhon Archers" key="loth_galadhon_archers" max="RANGED" script="galadhon_archers_unit_"></MenAtArm>
 		<MenAtArm type="Lorinand Rangers" key="Lorien_Bow_Sentries" max="RANGED" script="lorinand_rangers_unit_"></MenAtArm>
-		<MenAtArm type="Galadhrim Bow Warriors" key="loth_galad_bow_warriors" max="RANGED" script="galadhrim_bowwarriors_unit_"></MenAtArm>
 		<MenAtArm type="Lorien Sentinels" key="Caras_Galadhon_Guards" max="RANGED" script="lorien_sentinels_unit_"></MenAtArm>
 		<MenAtArm type="Lorien Bows" key="Lorien_Bows" max="RANGED" script="lorien_bows_unit_"></MenAtArm>
 		<MenAtArm type="Twilight Guard" key="loth_twilight_guard" max="RANGED" script="twilight_guard_unit_"></MenAtArm>
