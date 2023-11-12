@@ -489,11 +489,11 @@ amroth_sentinels = {
 	low_maintenance_cost = { gold = 0.1 }
 	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 30
-	damage = 140
-	toughness = 125
+	stack = 60
+	damage = 21
+	toughness = 36
 	pursuit = 10
-	screen = 20
+	screen = 16
 
 	counters = {
 		pikemen = 1
@@ -519,11 +519,11 @@ galadhrim_swordinf = {
 	low_maintenance_cost = { gold = 0.1 }
 	high_maintenance_cost = { gold = 0.3 }
 
-	stack = 20
-	damage = 175
-	toughness = 125
+	stack = 50
+	damage = 50
+	toughness = 50
 	pursuit = 10
-	screen = 30
+	screen = 16
 
 	counters = {
 		pikemen = 1
@@ -548,11 +548,11 @@ lorien_defenders = {
 	low_maintenance_cost = { gold = 0.25 }
 	high_maintenance_cost = { gold = 0.7 }
 
-	stack = 20
-	damage = 320
-	toughness = 350
-	pursuit = 20
-	screen = 80
+	stack = 40
+	damage = 90
+	toughness = 100
+	pursuit = 10
+	screen = 20
 
 	counters = {
 		skirmishers = 1
@@ -581,11 +581,11 @@ lorien_guards = {
 	low_maintenance_cost = { gold = 0.2 }
 	high_maintenance_cost = { gold = 0.6 }
 
-	stack = 30
-	damage = 200
-	toughness = 180
-	pursuit = 35
-	screen = 40
+	stack = 40
+	damage = 50
+	toughness = 60
+	pursuit = 0
+	screen = 10
 
 	counters = {
 		heavy_infantry = 1
@@ -613,11 +613,11 @@ galadhrim_swordwarriors = {
 	low_maintenance_cost = { gold = 0.2 }
 	high_maintenance_cost = { gold = 0.6 }
 
-	stack = 30
-	damage = 220
-	toughness = 200
-	pursuit = 40
-	screen = 40
+	stack = 40
+	damage = 60
+	toughness = 60
+	pursuit = 0
+	screen = 10
 
 	counters = {
 		heavy_infantry = 1
@@ -645,11 +645,11 @@ lorien_swords = {
 	low_maintenance_cost = { gold = 0.3 }
 	high_maintenance_cost = { gold = 0.9 }
 
-	stack = 20
-	damage = 300
-	toughness = 350
-	pursuit = 40
-	screen = 60
+	stack = 30
+	damage = 100
+	toughness = 100
+	pursuit = 0
+	screen = 10
 
 	counters = {
 		heavy_infantry = 1
@@ -678,8 +678,8 @@ naith_inf = {
 	high_maintenance_cost = { gold = 0.3 }
 
 	stack = 30
-	damage = 125
-	toughness = 160
+	damage = 65
+	toughness = 80
 	pursuit = 0
 	screen = 10
 
@@ -710,10 +710,10 @@ galadhrim_spearinf = {
 	high_maintenance_cost = { gold = 0.3 }
 
 	stack = 30
-	damage = 150
-	toughness = 180
+	damage = 70
+	toughness = 90
 	pursuit = 0
-	screen = 15
+	screen = 10
 
 	counters = {
 		light_cavalry = 1
@@ -742,8 +742,8 @@ heroes_amonlanc = {
 	high_maintenance_cost = { gold = 0.6 }
 
 	stack = 30
-	damage = 210
-	toughness = 250
+	damage = 115
+	toughness = 130
 	pursuit = 0
 	screen = 20
 
@@ -774,10 +774,10 @@ sentinels_celinamroth = {
 	high_maintenance_cost = { gold = 0.75 }
 
 	stack = 20
-	damage = 300
-	toughness = 380
+	damage = 130
+	toughness = 180
 	pursuit = 0
-	screen = 40
+	screen = 20
 
 	counters = {
 		light_cavalry = 1
@@ -806,10 +806,10 @@ lorien_outriders = {
 	high_maintenance_cost = { gold = 0.6 }
 
 	stack = 40
-	damage = 90
-	toughness = 80
+	damage = 60
+	toughness = 50
 	pursuit = 60
-	screen = 20
+	screen = 10
 
 	counters = {
 		skirmishers = 1
@@ -837,10 +837,10 @@ nimrodel_patrollers = {
 	high_maintenance_cost = { gold = 0.9 }
 
 	stack = 20
-	damage = 175
-	toughness = 100
-	pursuit = 100
-	screen = 60
+	damage = 100
+	toughness = 110
+	pursuit = 50
+	screen = 20
 
 	counters = {
 		skirmishers = 1
@@ -871,10 +871,10 @@ lorien_bowcavalry = {
 	high_maintenance_cost = { gold = 1.2 }
 
 	stack = 20
-	damage = 250
-	toughness = 150
-	pursuit = 140
-	screen = 60
+	damage = 160
+	toughness = 180
+	pursuit = 60
+	screen = 20
 
 	counters = {
 		skirmishers = 1
@@ -905,10 +905,10 @@ galadhon_archers = {
 	high_maintenance_cost = { gold = 0.3 }
 
 	stack = 30
-	damage = 150
-	toughness = 100
-	pursuit = 30
-	screen = 0
+	damage = 70
+	toughness = 50
+	pursuit = 0
+	screen = 10
 
 	counters = {
 		skirmishers = 1
@@ -938,10 +938,10 @@ lorinand_rangers = {
 	high_maintenance_cost = { gold = 0.3 }
 
 	stack = 30
-	damage = 200
-	toughness = 100
-	pursuit = 50
-	screen = 0
+	damage = 90
+	toughness = 40
+	pursuit = 10
+	screen = 15
 
 	counters = {
 		skirmishers = 1
@@ -971,10 +971,10 @@ lorien_sentinels = {
 	high_maintenance_cost = { gold = 0.3 }
 
 	stack = 30
-	damage = 250
-	toughness = 200
-	pursuit = 40
-	screen = 20
+	damage = 80
+	toughness = 70
+	pursuit = 0
+	screen = 10
 
 	counters = {
 		skirmishers = 1
@@ -1004,10 +1004,10 @@ lorien_bows = {
 	high_maintenance_cost = { gold = 0.6 }
 
 	stack = 20
-	damage = 290
-	toughness = 250
-	pursuit = 50
-	screen = 25
+	damage = 100
+	toughness = 90
+	pursuit = 0
+	screen = 10
 
 	counters = {
 		skirmishers = 1
@@ -1037,10 +1037,10 @@ twilight_guard = {
 	high_maintenance_cost = { gold = 0.6 }
 
 	stack = 20
-	damage = 330
-	toughness = 300
-	pursuit = 50
-	screen = 40
+	damage = 120
+	toughness = 100
+	pursuit = 0
+	screen = 10
 
 	counters = {
 		skirmishers = 1
@@ -1070,10 +1070,10 @@ marchwardens_goldenwood = {
 	high_maintenance_cost = { gold = 0.9 }
 
 	stack = 20
-	damage = 380
-	toughness = 400
-	pursuit = 50
-	screen = 60
+	damage = 150
+	toughness = 120
+	pursuit = 10
+	screen = 20
 
 	counters = {
 		skirmishers = 1
@@ -1103,10 +1103,10 @@ marchwardens_lothlorien = {
 	high_maintenance_cost = { gold = 0.9 }
 
 	stack = 20
-	damage = 380
-	toughness = 400
-	pursuit = 50
-	screen = 60
+	damage = 150
+	toughness = 120
+	pursuit = 10
+	screen = 20
 
 	counters = {
 		skirmishers = 1
@@ -1136,10 +1136,10 @@ marchwardens_greenwood = {
 	high_maintenance_cost = { gold = 0.9 }
 
 	stack = 20
-	damage = 380
-	toughness = 400
-	pursuit = 50
-	screen = 60
+	damage = 150
+	toughness = 120
+	pursuit = 10
+	screen = 20
 
 	counters = {
 		skirmishers = 1
