@@ -1,0 +1,452 @@
+﻿# standard costs
+@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+## Númenor ##
+
+numenorean_submod_pikemen = {
+	can_recruit = { 
+		culture = { has_cultural_parameter = unlock_maa_numenorean_submod_pikemen } 
+		}
+	type = pikemen
+	
+	damage = 48
+	toughness = 51
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		hills = { damage = 3 toughness = 8 }
+		mountains = { damage = 5 toughness = 12 }
+		desert_mountains = { damage = 5 toughness = 12 }
+	}
+
+	counters = {
+		pikemen = 0.5
+		light_cavalry = 2
+		heavy_cavalry = 2
+	}
+
+	buy_cost = { gold = pikemen_recruitment_cost }
+	low_maintenance_cost = { gold = pikemen_low_maint_cost }
+	high_maintenance_cost = { gold = pikemen_high_maint_cost }
+	
+	allowed_in_hired_troops = no
+	
+	stack = 100
+	ai_quality = { value = culture_ai_weight_pikemen }
+	icon = numenorean_submod_pikemen
+}
+
+numenorean_royal_knights = {
+	can_recruit = { 
+		culture = { has_cultural_parameter = unlock_maa_numenorean_royal_knights } 
+		}
+	type = heavy_infantry
+	
+	damage = 150
+	toughness = 50
+	pursuit = 20
+	screen = 10
+	
+	terrain_bonus = {
+		plains = { damage = 30 }
+		drylands = { damage = 30 }
+		hills = { damage = -10 }
+		jungle = { damage = -25 }
+		mountains = { damage = -50 }
+		desert_mountains = { damage = -50 }
+		wetlands = { damage = -75 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = 1200 }
+	low_maintenance_cost = { gold = 5.3 }
+	high_maintenance_cost = { gold = 10.7 }
+	
+	stack = 50
+
+	allowed_in_hired_troops = no
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	#icon = dunedain_horse
+	icon = numenorean_royal_knights
+}
+
+numenorean_common_soldiers = {
+	can_recruit = { 
+		culture = { has_cultural_parameter = unlock_maa_numenorean_common_soldiers } 
+		}
+	type = heavy_infantry
+
+	damage = 80
+	toughness = 60
+	pursuit = 0
+	screen = 50
+	
+	counters = {
+		pikemen = 1
+		archers = 1
+	}
+	
+	buy_cost = { gold = 250 }
+	low_maintenance_cost = { gold = 1 }
+	high_maintenance_cost = { gold = 3 }
+	
+	stack = 50
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = numenorean_common_soldiers
+}
+
+numenorean_steel_archers = {
+	can_recruit = { 
+		culture = { has_cultural_parameter = unlock_maa_numenorean_steel_archers } 
+		}
+	type = archers
+	
+	damage = 75
+	toughness = 30
+	pursuit = 5
+	screen = 15
+	
+	terrain_bonus = {
+		hills = { damage = 12 toughness = 4 }
+	}
+
+	counters = {
+		skirmishers = 1
+		heavy_cavalry = 1
+	}
+
+	buy_cost = { gold = 200 }
+	low_maintenance_cost = { gold = 0.9 }
+	high_maintenance_cost = { gold = 2.7 }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = numenorean_steel_archers
+}
+
+# Special Ar-Adunaim title MAA
+narunaru_royal_guard = { # Royal Guards of the Ar-Adunaim
+	can_recruit =  { primary_title = title:e_adunaim }	
+	type = pikemen	
+	max_sub_regiments = 5		
+	damage = 60
+	toughness = 75
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		mountains = { damage = 10 toughness = 30 }
+		desert_mountains = { damage = 10 toughness = 30 }
+		hills = { damage = 5 toughness = 25 }
+		red_desert = { damage = 5 toughness = 25 }
+		plains = { damage = 5 toughness = 15 }
+		farmlands = { damage = 5 toughness = 15 }
+		desert = { damage = -10 toughness = -10 }
+		dune_sea = { damage = -20 toughness = -20 }
+	}
+	
+	counters = {
+		light_cavalry = 2
+		heavy_cavalry = 1
+		camel_cavalry = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -10 toughness = -10 }
+		harsh_winter = { damage = -20 toughness = -20 }
+	}
+
+	buy_cost = { gold = 100 }
+	low_maintenance_cost = { gold = 0.33 }
+	high_maintenance_cost = { gold = 0.99 }
+	
+	stack = 50
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	allowed_in_hired_troops = no
+	icon = narunaru_royal_guard
+}
+
+adunaim_armsmen = { # Adunâim Armsmen
+	can_recruit =  { primary_title = title:e_adunaim }
+	type = heavy_infantry
+	damage = 40
+	toughness = 26
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		farmlands = { damage = 6 toughness = 6 }
+		hills = { damage = 6 toughness = 6 }
+		red_desert = { damage = 6 toughness = 6 }
+		plains = { damage = 3 toughness = 3 }
+		desert = { damage = -16 toughness = -6 }
+		dune_sea = { damage = -16 toughness = -6 }
+	}
+	
+	counters = {
+		pikemen = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5 toughness = -5 }
+		harsh_winter = { damage = -10 toughness = -10 }
+	}
+	
+	buy_cost = { gold = 112 }
+	low_maintenance_cost = { gold = 0.5 }
+	high_maintenance_cost = { gold = 1.5 }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	allowed_in_hired_troops = no
+	icon = adunaim_armsmen
+}
+
+# Castamiri MAA
+adunakhori = { # Heavy Shock Infantry,
+	can_recruit = { 
+		dynasty = dynasty:dynasty_castamir
+		NOT = { is_gondor = yes }
+		NOT = { is_numenor = yes }
+		highest_held_title_tier >= tier_kingdom
+	}
+	type = heavy_infantry
+	max_sub_regiments = 5
+	damage = 70
+	toughness = 64
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		farmlands = { damage = 20 toughness = 10 }
+		plains = { damage = 15 toughness = 5 }
+		hills = { damage = 10 toughness = 5 }
+		red_desert = { damage = 10 toughness = 5 }
+		forest = { damage = 10 toughness = 5 }
+	}
+	
+	counters = {
+		skirmishers = 2
+		heavy_infantry = 1
+		pikemen = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5 toughness = -5 }
+		harsh_winter = { damage = -10 toughness = -10 }
+	}
+
+	buy_cost = { gold = 100 }
+	low_maintenance_cost = { gold = 0.4 }
+	high_maintenance_cost = { gold = 1.2 }
+	
+	stack = 50
+
+	allowed_in_hired_troops = no
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = adunakhori
+}
+
+umbar_usurpers = { # the Umbar Usurpers or Zimranardû  'Jewel-soldiers' 
+	can_recruit = { 
+		dynasty = dynasty:dynasty_castamir
+		NOT = { is_gondor = yes }
+		NOT = { is_numenor = yes }
+		highest_held_title_tier >= tier_kingdom
+	}	
+	type = skirmishers			
+	damage = 16
+	toughness = 15
+	pursuit = 10
+	screen = 10
+	
+	terrain_bonus = {
+		farmlands = { damage = 6 toughness = 4 }
+		plains = { damage = 3 toughness = 2 }
+		drylands = { damage = 3 toughness = 2 }
+		forest = { damage = 3 toughness = 2 }
+		jungle = { damage = 3 toughness = 2 }
+		mountains = { damage = -3 toughness = -2 }
+		desert_mountains = { damage = -3 toughness = -2 }
+	}
+
+	counters = { 
+		skirmishers = 1
+		heavy_infantry = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -3 toughness = -2 }
+		harsh_winter = { damage = -5 toughness = -4 }
+	}
+
+	buy_cost = { gold = 55 }
+	low_maintenance_cost = { gold = 0.18 }
+	high_maintenance_cost = { gold = 0.54 }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	allowed_in_hired_troops = no
+	icon = umbar_usurpers
+}
+
+# Black Numenorean Legacy MAA
+abrazanim_legion = { # the Abrazanim Nardutârik = 'Faithful Tower-soldiers' sturdy defensive tactics
+	can_recruit = { 
+		culture = { has_cultural_parameter = unlock_maa_abrazanim_legion } 
+		NOT = { is_numenor = yes }
+		}
+	type = heavy_infantry
+	
+	damage = 55
+	toughness = 25
+	pursuit = 0
+	screen = 20
+	
+	terrain_bonus = {
+		farmlands = { damage = 10 toughness = 5 pursuit = 10 screen = 10 }
+		mountains = { damage = -20 toughness = -10 screen = -10 }
+		jungle = { damage = -20 toughness = -10 screen = -10 }
+		desert_mountains = { damage = -20 toughness = -10 screen = -10 }
+		desert = { damage = -20 toughness = -20 screen = -10 }
+		dune_sea = { damage = -20 toughness = -20 screen = -10 }
+	}
+	
+	counters = {
+		pikemen = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5 toughness = -5 }
+		harsh_winter = { damage = -10 toughness = -10 }
+	}
+	
+	buy_cost = { gold = 160 }
+	low_maintenance_cost = { gold = 0.7 }
+	high_maintenance_cost = { gold = 2.1 }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = abrazanim_legion
+}
+
+abrazanim_helberdiers = { # Abrazanim Narduburôda
+	can_recruit = { 
+		culture = { has_cultural_parameter = unlock_maa_abrazanim_helberdiers } 
+		NOT = { is_numenor = yes }
+		}
+	type = pikemen
+	
+	damage = 35
+	toughness = 28
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		farmlands = { damage = 10 toughness = 6 pursuit = 10 }
+		plains = { damage = 6 toughness = 4 pursuit = 6 }
+		hills = { damage = -6 pursuit = -6 }
+		mountains = { damage = -10 pursuit = -6 }
+		desert_mountains = { damage = -10 pursuit = -6 }
+	}
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		elephant_cavalry = 1
+		pikemen = 0.5
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5 toughness = -3 }
+		harsh_winter = { damage = -10 toughness = -5 }
+	}
+
+	buy_cost = { gold = 105 }
+	low_maintenance_cost = { gold = 0.4 }
+	high_maintenance_cost = { gold = 1.2 }
+	
+	allowed_in_hired_troops = no
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = abrazanim_helberdiers
+}
+
+abrazanim_warbows = { # Abrazanim Nardubawîb = 'Faithful Wind-soldiers'. The Nardubawîb are the ranged part of the army
+	can_recruit = { 
+		culture = { has_cultural_parameter = unlock_maa_abrazanim_warbows } 
+		NOT = { is_numenor = yes }
+		}
+	type = archers
+	
+	damage = 36
+	toughness = 16
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		mountains = { damage = 10 toughness = 6 }
+		desert_mountains = { damage = 10 toughness = 6 }
+		hills = { damage = 8 toughness = 3 }
+		red_desert = { damage = 8 toughness = 3 }
+	}
+
+	counters = {
+		skirmishers = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5 toughness = -3 }
+		harsh_winter = { damage = -10 toughness = -5 }
+	}
+
+	buy_cost = { gold = 78 }
+	low_maintenance_cost = { gold = 0.32 }
+	high_maintenance_cost = { gold = 0.96 }
+	
+	mercenary_fallback = yes
+	holy_order_fallback = yes
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = abrazanim_warbows
+}
+
+### Religous MAA ###
+
+# Cult of the Lidless Eye
+temple_knights_of_the_eye = { # Servants of the Eye
+	type = heavy_infantry
+	can_recruit = { always = no }
+	damage = 36
+	toughness = 26
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		volcanic_plains = { damage = 10 toughness = 5 }
+	}
+
+	counters = {
+		pikemen = 1
+	}
+
+	buy_cost = { gold = 90 }
+	low_maintenance_cost = { gold = 0.4 }
+	high_maintenance_cost = { gold = 1.2 }
+	
+	stack = 100
+
+	allowed_in_hired_troops = no
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = heavy_infantry
+}
