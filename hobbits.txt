@@ -1,0 +1,30 @@
+﻿
+shirefolk = {
+	color = { 51 51 0 }
+	created = 5634.1.1
+	parents = {  }
+
+	ethos = ethos_egalitarian
+	heritage = heritage_hobbit
+	language = language_westron
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_forest_folk
+		tradition_hill_dwellers
+		tradition_tribe_unity
+		tradition_agrarian
+		tradition_festivities
+	}
+
+	name_list = name_list_rohirrim
+
+	coa_gfx = { dunlending_group_coa_gfx }
+	building_gfx = { celtic_building_gfx western_building_gfx }
+	clothing_gfx = { gwathiurim_clothing_gfx }
+	unit_gfx = { northern_unit_gfx }
+	
+	ethnicities = {
+		1 = hobbit_ethnicity
+	}	
+
+}
